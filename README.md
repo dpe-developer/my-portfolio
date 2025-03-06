@@ -1,6 +1,6 @@
-<p align="center">
+<!-- <p align="center">
   <img alt="" src="/.github/assets/cover.png" />
-</p>
+</p> -->
 
 <h1 align="center">
   shadcn-portfolio
