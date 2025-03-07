@@ -26,7 +26,7 @@ export default function About() {
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const heroRef = useRef<HTMLDivElement>(null)
-  const testimonialsRef = useRef<HTMLDivElement>(null);
+  const technologiesRef = useRef<HTMLDivElement>(null);
 
   return (
     <main className="flex-1 px-4 sm:px-8 md:px-12 lg:px-16 2xl:px-24">
@@ -53,22 +53,24 @@ export default function About() {
             as="h1"
             className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
-            Innovator
+            {/* Innovator */}
+            Software
           </TextReveal>
           <TextReveal
             as="h1"
             className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
-            Designer
+            {/* Designer */}
+            Engineer
           </TextReveal>
-          <motion.div
+          {/* <motion.div
             className="mt-8"
             style={{ opacity }}
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >
             <ChevronDown className="h-8 w-8" />
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
@@ -82,10 +84,23 @@ export default function About() {
             <div className="space-y-8">
               <TextReveal
                 as="h3"
-                className="font-serif text-3xl leading-tight sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
+                className="font-serif text-3xl  sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                I create captivating designs by blending aesthetics, motion, and
-                technology.
+                Hi, I'm David Paul
+              </TextReveal>
+              <TextReveal
+                as="p"
+                className="text-base leading-relaxed text-muted-foreground sm:text-lg md:text-lg lg:text-xl xl:text-2xl"
+              >
+                a passionate and detail-oriented Software/Web Developer
+                with a love for building innovative and user-friendly
+                digital solutions. With 5 years of experience in the tech
+                industry, I specialize in full-stack development, and I'm
+                always eager to learn and adapt to new technologies. I hold
+                a degree in Bachelor of Science in Computer Science from
+                the University of the Cordilleras, and I've worked on a
+                variety of projects ranging from responsive websites,
+                RESTful APIs, and machine learning applications.
               </TextReveal>
               <TextReveal
                 as="p"
@@ -94,7 +109,7 @@ export default function About() {
                 My journey into creativity began with a spark of curiosity about
                 how ideas could come to life on a screen. Fascinated by the
                 interplay of design and technology, I started exploring web
-                development, motion graphics, and interface design through
+                development, IoT, and interface design through
                 self-driven projects. With every experiment, my skills grew, and
                 what began as a hobby soon became a passion for crafting
                 meaningful digital experiences. As I honed my abilities, I
@@ -145,7 +160,7 @@ export default function About() {
           <div className="col-span-1 md:col-span-3">
             <div
               className="relative h-full w-full cursor-pointer items-center justify-center overflow-hidden"
-              ref={testimonialsRef}
+              ref={technologiesRef}
             >
               <div className="flex h-full w-full flex-wrap items-center justify-start gap-4">
                 {technologies.map((technology, index) => (
@@ -153,14 +168,14 @@ export default function About() {
                     <TechnologyCard
                       key={`technology_${index}`}
                       name={technology.name}
-                      containerRef={testimonialsRef}
+                      containerRef={technologiesRef}
                     />
 
                     {index < technologies.length - 1 && (
                       <TechnologyCard
                         key={`technology_sep_${index}`}
                         name={','}
-                        containerRef={testimonialsRef}
+                        containerRef={technologiesRef}
                       />
                     )}
                   </>

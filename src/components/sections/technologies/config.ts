@@ -22,7 +22,7 @@ const technologies: Technology[] = [
     image: '/images/person/emilysmith.jpg'
   },
   {
-    name: 'Javascript',
+    name: 'JavaScript',
     image: '/images/person/michaeljohnson.jpg'
   },
   {
@@ -30,11 +30,7 @@ const technologies: Technology[] = [
     image: '/images/person/michaeljohnson.jpg'
   },
   {
-    name: 'React',
-    image: '/images/person/michaeljohnson.jpg'
-  },
-  {
-    name: 'Typescript',
+    name: 'React with TypeScript',
     image: '/images/person/michaeljohnson.jpg'
   },
   {
@@ -43,6 +39,14 @@ const technologies: Technology[] = [
   },
   {
     name: 'Python',
+    image: '/images/person/michaeljohnson.jpg'
+  },
+  {
+    name: 'C++',
+    image: '/images/person/michaeljohnson.jpg'
+  },
+  {
+    name: 'Java',
     image: '/images/person/michaeljohnson.jpg'
   },
   {

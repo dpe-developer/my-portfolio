@@ -3,6 +3,11 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
+/* Remove warning "container has a non-static position" */
+html {
+  position: relative;
+}
+
 /* relative to the CSS file, make sure it's correct for your app */
 @source '../../node_modules/fumadocs-ui/dist/**/*.js';
 

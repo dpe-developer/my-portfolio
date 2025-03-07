@@ -2,8 +2,6 @@
 title: Simplyfood
 description: An online recipe costing app designed to help chefs, restaurateurs, food businesses, and home cooks accurately calculate the cost of preparing a recipe.
 date: 2024-05-26
-website: https://example.com/
-github: https://github.com/
 tags:
   - label: Laravel
   - label: HTML
@@ -25,52 +23,13 @@ This is a social app for food lovers where users can post, share, and discover r
 
 ## Tech Stack
 
-- **Frontend**: **Bootstrap** for a dynamic and responsive user interface.
+- **Frontend**: **Bootstrap** and **JQuery** for a dynamic and responsive user interface.
 - **Backend**: **Laravel** for handling server-side logic.
 - **Database**: **MySQL** for storing recipes, user profiles, and interactions.
-- **Styling**: Designed with **CSS** and styled components for a visually appealing UI.
 
-## Implementation
+1. **Ingredient Database**: Users input ingredients with cost per unit (e.g., per gram, ounce, liter).
+2. **Recipe Creation**: Users add ingredients to a recipe, specifying quantity used.
+3. **Cost Calculation**: The app calculates the total recipe cost based on ingredient quantities and unit costs.
+4. **Portion & Selling Price**: Users set portion sizes and markup percentage to determine the selling price.
+5. **Profit Margin Analysis**: The app shows profit per serving and overall profit percentage.
 
-### Frontend
-
-- **React** used for reusable UI components.
-- **React Router** for navigating between pages like home, profiles, and recipe details.
-- **Axios** for API integration with the backend.
-
-### Backend
-
-- **Express.js** API endpoints for managing recipes, user authentication, and interactions.
-- **JWT** for secure user authentication.
-- Middleware for validating and uploading images using **Multer** and **Cloudinary**.
-
-### Database
-
-- **MongoDB** for storing structured data like users, recipes, and comments.
-- Indexed queries for fast search and retrieval.
-- Data relationships for linking recipes to user profiles.
-
-### Deployment
-
-- Backend deployed on **Heroku** with Dockerized containers.
-- Frontend deployed on **Vercel** with CI/CD for seamless updates.
-
-## How It Works
-
-1. **User Onboarding**: Sign up or log in to start exploring and sharing recipes.
-2. **Post Recipes**: Upload recipes with images, categories, and detailed steps.
-3. **Discover Recipes**: Use search or filters to find recipes based on your taste.
-4. **Engage with Community**: Like, comment, and save your favorite recipes.
-5. **Personalize Profile**: Showcase your culinary creations on your profile page.
-
-## Challenges Faced
-
-- Managing large image uploads efficiently while maintaining performance.
-- Creating a seamless user experience for both desktop and mobile devices.
-- Ensuring database scalability to handle increasing recipe posts and user interactions.
-
-## Future Enhancements
-
-- Adding a meal planner feature for users to organize recipes for the week.
-- Introducing recipe video tutorials for better user engagement.
-- Implementing AI-powered suggestions for recipes based on user preferences.

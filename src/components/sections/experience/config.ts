@@ -3,7 +3,7 @@ import { Experience } from '@/types/experience';
 const experiences: Experience[] = [
   {
     name: 'Software Developer',
-    duration: '2020 - Present',
+    duration: '2020 - 2025',
     company: 'TechniqalGroup MCS',
     description:
       'Building beautiful and functional websites using modern web technologies, focusing on performance, accessibility, and SEO-friendly design.'
