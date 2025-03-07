@@ -43,7 +43,7 @@ function Hero() {
               <span>A </span>
               <TextLoop
                 className="overflow-y-clip"
-                // transition={textLoopTransition}
+                transition={textLoopTransition}
                 variants={textLoopVariants}
               >
                 {heroContent.map((content, index) => (
@@ -55,7 +55,7 @@ function Hero() {
                 <span>Who</span>
                 <TextLoop
                   className="my-auto inline-block h-[3.25rem] overflow-hidden overflow-y-clip md:h-[7.8rem]"
-                  // transition={textLoopTransition}
+                  transition={textLoopTransition}
                   variants={textLoopVariants}
                 >
                   {heroContent.map((content, index) => (
@@ -72,7 +72,7 @@ function Hero() {
                 <span>to</span>
                 <TextLoop
                   className="overflow-y-clip"
-                  // transition={textLoopTransition}
+                  transition={textLoopTransition}
                   variants={textLoopVariants}
                 >
                   {heroContent.map((content, index) => (
