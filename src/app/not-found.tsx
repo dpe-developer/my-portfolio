@@ -39,7 +39,7 @@ const NotFoundPage: React.FC = () => {
           <div className="h-20 w-20 overflow-hidden md:h-48 md:w-48">
             <img
               src={image}
-              alt={`Example ${index + 1}`}
+              alt={`Example ${index}`}
               className="h-full w-full object-cover"
             />
           </div>

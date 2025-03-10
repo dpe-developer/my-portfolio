@@ -35,12 +35,12 @@ export default function About() {
           <ImageTrail containerRef={heroRef}>
             {exampleImages.map((image, index) => (
               <div
-                key={index}
+                key={`image_trail_${index}`}
                 className="flex relative overflow-hidden w-24 h-24 "
               >
                 <img
                   src={image}
-                  alt="image"
+                  alt={'Image ' + index.toString()}
                   loading="lazy"
                   className="object-cover absolute inset-0"
                 />
@@ -63,14 +63,14 @@ export default function About() {
             {/* Designer */}
             Engineer
           </TextReveal>
-          {/* <motion.div
+          <motion.div
             className="mt-8"
             style={{ opacity }}
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >
             <ChevronDown className="h-8 w-8" />
-          </motion.div> */}
+          </motion.div>
         </div>
       </section>
 
@@ -86,7 +86,7 @@ export default function About() {
                 as="h3"
                 className="font-serif text-3xl  sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                Hi, I'm David Paul
+                Hi, I&apos;m David Paul
               </TextReveal>
               <TextReveal
                 as="p"
@@ -95,10 +95,10 @@ export default function About() {
                 a passionate and detail-oriented Software/Web Developer
                 with a love for building innovative and user-friendly
                 digital solutions. With 5 years of experience in the tech
-                industry, I specialize in full-stack development, and I'm
+                industry, I specialize in full-stack development, and I&apos;m
                 always eager to learn and adapt to new technologies. I hold
                 a degree in Bachelor of Science in Computer Science from
-                the University of the Cordilleras, and I've worked on a
+                the University of the Cordilleras, and I&apos;ve worked on a
                 variety of projects ranging from responsive websites,
                 RESTful APIs, and machine learning applications.
               </TextReveal>
@@ -138,7 +138,7 @@ export default function About() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 md:gap-6 xl:grid-cols-2">
               {skills.map((skill, index) => (
                 <SkillCard
-                  key={`skill_${index}`}
+                  key={`skills_${index}`}
                   index={index + 1}
                   name={skill.name}
                   description={skill.description}
@@ -160,20 +160,20 @@ export default function About() {
           <div className="col-span-1 md:col-span-3">
             <div
               className="relative h-full w-full cursor-pointer items-center justify-center overflow-hidden"
-              ref={technologiesRef}
+              // ref={technologiesRef}
             >
               <div className="flex h-full w-full flex-wrap items-center justify-start gap-4">
                 {technologies.map((technology, index) => (
                   <>
                     <TechnologyCard
-                      key={`technology_${index}`}
+                      key={`technologies_${index}`}
                       name={technology.name}
                       containerRef={technologiesRef}
                     />
 
                     {index < technologies.length - 1 && (
                       <TechnologyCard
-                        key={`technology_sep_${index}`}
+                        key={`technologies_sep_asdasd${index}`}
                         name={','}
                         containerRef={technologiesRef}
                       />
@@ -196,7 +196,7 @@ export default function About() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 md:gap-6 xl:grid-cols-2">
               {experiences.map((experience, index) => (
                 <ExperienceCard
-                  key={`experience_${index}`}
+                  key={`experiences_${index}`}
                   name={experience.name}
                   description={experience.description}
                   company={experience.company}
@@ -232,7 +232,7 @@ export default function About() {
                     buttonVariants({ variant: 'link' }),
                     'h-min w-min gap-1 p-0 text-sm sm:text-base md:text-lg'
                   )}
-                  key={`contact-social_${index}`}
+                  key={`contacts_social_${index}`}
                 >
                   {Icon && <Icon className="h-4 w-4" />}
                   {name}
