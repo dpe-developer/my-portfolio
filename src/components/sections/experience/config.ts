@@ -6,7 +6,7 @@ const experiences: Experience[] = [
     duration: '2020 - 2025',
     company: 'TechniqalGroup MCS',
     description:
-      'Building beautiful and functional websites using modern web technologies, focusing on performance, accessibility, and SEO-friendly design.'
+      'Discussed project progress with customers, collected feedback on different stages and directly addressed concerns. I used Javascript (JQuery, React with TypeScript), MySQL, and Laravel to develop app solutions. I managed development milestones from initial steps through final delivery using Amazon Web Services.'
   },
   /* {
     name: 'UI/UX Design',
