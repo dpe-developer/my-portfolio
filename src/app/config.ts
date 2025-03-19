@@ -4,16 +4,20 @@ const metadata: Metadata = {
   author: {
     name: 'David Paul Eligio',
     username: 'davidpaul',
-    label: 'Designer & Developer'
+    label: 'Full-stack Developer'
   },
   site: {
     title: 'David Paul Eligio',
-    description: 'Portfolio of web & UI designer/developer David Paul Eligio.',
-    url: 'https://davidpaul.tehgroup.ph',
+    description: 'Portfolio of full-stack developer David Paul Eligio.',
+    url: 'https://davidpaul.vercel.app',
     keywords: [
       'web design',
       'UI design',
       'web development',
+      'full-stack web development',
+      'it solutions',
+      'it services',
+      'it consultant',
       'portfolio',
       'David Paul Eligio'
     ],

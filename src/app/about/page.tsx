@@ -54,14 +54,16 @@ export default function About() {
             className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
             {/* Innovator */}
-            Software
+            {/* Software */}
+            Full-stack
           </TextReveal>
           <TextReveal
             as="h1"
             className="leading-wide tracking-relaxed z-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
           >
             {/* Designer */}
-            Engineer
+            {/* Engineer */}
+            Developer
           </TextReveal>
           <motion.div
             className="mt-8"
@@ -92,7 +94,7 @@ export default function About() {
                 as="p"
                 className="text-base leading-relaxed text-muted-foreground sm:text-lg md:text-lg lg:text-xl xl:text-2xl"
               >
-                a passionate and detail-oriented Software/Web Developer
+                a passionate and detail-oriented Full-stack Developer
                 with a love for building innovative and user-friendly
                 digital solutions. With 5 years of experience in the tech
                 industry, I specialize in full-stack development, and I&apos;m
